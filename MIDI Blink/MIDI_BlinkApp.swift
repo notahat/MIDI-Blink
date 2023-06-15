@@ -5,7 +5,7 @@ struct MIDI_BlinkApp: App {
     @StateObject private var sourceManager = MIDISourceManager()
     
     var body: some Scene {
-        WindowGroup {
+        Window("MIDI Blink", id: "main") {
             ContentView(sources: sourceManager.sources)
         }
     }

@@ -9,9 +9,11 @@ struct SourceView: View {
 
     var body: some View {
         HStack {
-            Circle()
-                .frame(width: 30)
-                .foregroundColor(source.eventCount != lastSeenEventCount ? .green : .white)
+            Rectangle()
+                .frame(width: 30, height: 30)
+                .border(Color.primary, width: 2)
+                .padding(5)
+                .foregroundColor(source.eventCount != lastSeenEventCount ? .green : .clear)
                 .onReceive(timer) { _ in
                     withAnimation { lastSeenEventCount = source.eventCount }
                 }

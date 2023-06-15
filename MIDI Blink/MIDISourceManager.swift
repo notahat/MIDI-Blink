@@ -62,7 +62,7 @@ class MIDISourceManager: ObservableObject {
     
     private func processReceivedMessages(_ endpointRef: MIDIEndpointRef) {
         if let index = sources.firstIndex(where: { $0.endpointRef == endpointRef }) {
-            sources[index].hasReceivedMessages = true
+            sources[index].eventCount += 1
         }
     }
 }

@@ -14,6 +14,7 @@
 		34691FEB2A3ADFD50054E09D /* MIDISource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691FEA2A3ADFD50054E09D /* MIDISource.swift */; };
 		34691FED2A3AE0220054E09D /* MIDISourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691FEC2A3AE0220054E09D /* MIDISourceManager.swift */; };
 		34691FEF2A3AE56E0054E09D /* MIDIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691FEE2A3AE56E0054E09D /* MIDIHelpers.swift */; };
+		34691FF12A3B0BB40054E09D /* SourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691FF02A3B0BB40054E09D /* SourceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		34691FEA2A3ADFD50054E09D /* MIDISource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDISource.swift; sourceTree = "<group>"; };
 		34691FEC2A3AE0220054E09D /* MIDISourceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDISourceManager.swift; sourceTree = "<group>"; };
 		34691FEE2A3AE56E0054E09D /* MIDIHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIHelpers.swift; sourceTree = "<group>"; };
+		34691FF02A3B0BB40054E09D /* SourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				34691FDB2A3AD6310054E09D /* MIDI_BlinkApp.swift */,
 				34691FDD2A3AD6310054E09D /* ContentView.swift */,
+				34691FF02A3B0BB40054E09D /* SourceView.swift */,
 				34691FEC2A3AE0220054E09D /* MIDISourceManager.swift */,
 				34691FEA2A3ADFD50054E09D /* MIDISource.swift */,
 				34691FEE2A3AE56E0054E09D /* MIDIHelpers.swift */,
@@ -151,6 +154,7 @@
 				34691FEF2A3AE56E0054E09D /* MIDIHelpers.swift in Sources */,
 				34691FEB2A3ADFD50054E09D /* MIDISource.swift in Sources */,
 				34691FED2A3AE0220054E09D /* MIDISourceManager.swift in Sources */,
+				34691FF12A3B0BB40054E09D /* SourceView.swift in Sources */,
 				34691FDE2A3AD6310054E09D /* ContentView.swift in Sources */,
 				34691FDC2A3AD6310054E09D /* MIDI_BlinkApp.swift in Sources */,
 			);

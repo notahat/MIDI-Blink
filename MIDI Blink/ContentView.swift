@@ -4,8 +4,8 @@ struct ContentView: View {
     var sources: [MIDISource] = []
 
     var body: some View {
-        List(sources) { source in
-            Toggle(source.displayName, isOn: .constant(source.hasReceivedMessages))
+        List(sources) {
+            SourceView(source: $0)
         }
     }
 }

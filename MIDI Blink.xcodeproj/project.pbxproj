@@ -61,11 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				34691FDB2A3AD6310054E09D /* MIDI_BlinkApp.swift */,
-				34691FDD2A3AD6310054E09D /* ContentView.swift */,
-				34691FF02A3B0BB40054E09D /* SourceView.swift */,
-				34691FEC2A3AE0220054E09D /* MIDISourceManager.swift */,
-				34691FEA2A3ADFD50054E09D /* MIDISource.swift */,
-				34691FEE2A3AE56E0054E09D /* MIDIHelpers.swift */,
+				34691FF32A3B2BEA0054E09D /* Views */,
+				34691FF22A3B2BDD0054E09D /* Models */,
 				34691FDF2A3AD6310054E09D /* Assets.xcassets */,
 				34691FE42A3AD6310054E09D /* MIDI_Blink.entitlements */,
 				34691FE12A3AD6310054E09D /* Preview Content */,
@@ -79,6 +76,25 @@
 				34691FE22A3AD6310054E09D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34691FF22A3B2BDD0054E09D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34691FEC2A3AE0220054E09D /* MIDISourceManager.swift */,
+				34691FEA2A3ADFD50054E09D /* MIDISource.swift */,
+				34691FEE2A3AE56E0054E09D /* MIDIHelpers.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		34691FF32A3B2BEA0054E09D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34691FDD2A3AD6310054E09D /* ContentView.swift */,
+				34691FF02A3B0BB40054E09D /* SourceView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

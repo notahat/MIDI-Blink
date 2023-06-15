@@ -7,6 +7,12 @@ struct ContentView: View {
         List(sources) {
             SourceView(source: $0)
         }
+        .overlay {
+            if sources.isEmpty {
+                Text("No MIDI sources connected.")
+                    .font(.largeTitle)
+            }
+        }
     }
 }
 
@@ -17,5 +23,7 @@ struct ContentView_Previews: PreviewProvider {
             MIDISource(displayName: "Bar"),
             MIDISource(displayName: "Baz"),
         ])
+        ContentView(sources: [])
+            .previewDisplayName("No sources")
     }
 }

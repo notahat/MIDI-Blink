@@ -11,8 +11,11 @@ struct ContentView: View {
             if sources.isEmpty {
                 Text("No MIDI sources connected.")
                     .font(.largeTitle)
+                    .multilineTextAlignment(.center)
+                    .padding()
             }
         }
+        .frame(minWidth: 300, minHeight: 165)
     }
 }
 
@@ -25,5 +28,8 @@ struct ContentView_Previews: PreviewProvider {
         ])
         ContentView(sources: [])
             .previewDisplayName("No sources")
+        ContentView(sources: [])
+            .frame(width: 300)
+            .previewDisplayName("No sources, narrow")
     }
 }

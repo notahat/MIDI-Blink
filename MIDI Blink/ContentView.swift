@@ -1,26 +1,21 @@
-//
-//  ContentView.swift
-//  MIDI Blink
-//
-//  Created by Peter Yandell on 15/6/2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    var sources: [Source] = []
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List(sources) {
+            Text($0.label)
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(sources: [
+            Source(label: "Foo"),
+            Source(label: "Bar"),
+            Source(label: "Baz"),
+        ])
     }
 }

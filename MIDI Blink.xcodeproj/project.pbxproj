@@ -13,6 +13,7 @@
 		34691FE32A3AD6310054E09D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34691FE22A3AD6310054E09D /* Preview Assets.xcassets */; };
 		34691FEB2A3ADFD50054E09D /* MIDISource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691FEA2A3ADFD50054E09D /* MIDISource.swift */; };
 		34691FED2A3AE0220054E09D /* MIDISourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691FEC2A3AE0220054E09D /* MIDISourceManager.swift */; };
+		34691FEF2A3AE56E0054E09D /* MIDIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691FEE2A3AE56E0054E09D /* MIDIHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		34691FE42A3AD6310054E09D /* MIDI_Blink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MIDI_Blink.entitlements; sourceTree = "<group>"; };
 		34691FEA2A3ADFD50054E09D /* MIDISource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDISource.swift; sourceTree = "<group>"; };
 		34691FEC2A3AE0220054E09D /* MIDISourceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDISourceManager.swift; sourceTree = "<group>"; };
+		34691FEE2A3AE56E0054E09D /* MIDIHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				34691FDD2A3AD6310054E09D /* ContentView.swift */,
 				34691FEC2A3AE0220054E09D /* MIDISourceManager.swift */,
 				34691FEA2A3ADFD50054E09D /* MIDISource.swift */,
+				34691FEE2A3AE56E0054E09D /* MIDIHelpers.swift */,
 				34691FDF2A3AD6310054E09D /* Assets.xcassets */,
 				34691FE42A3AD6310054E09D /* MIDI_Blink.entitlements */,
 				34691FE12A3AD6310054E09D /* Preview Content */,
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34691FEF2A3AE56E0054E09D /* MIDIHelpers.swift in Sources */,
 				34691FEB2A3ADFD50054E09D /* MIDISource.swift in Sources */,
 				34691FED2A3AE0220054E09D /* MIDISourceManager.swift in Sources */,
 				34691FDE2A3AD6310054E09D /* ContentView.swift in Sources */,

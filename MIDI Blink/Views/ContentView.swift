@@ -9,13 +9,16 @@ struct ContentView: View {
         }
         .overlay {
             if sources.isEmpty {
-                Text("No MIDI sources connected.")
-                    .font(.largeTitle)
-                    .multilineTextAlignment(.center)
-                    .padding()
+                VStack {
+                    Text("No MIDI sources are connected.")
+                    Text("Plug in a MIDI device to get started.")
+                }
+                .font(.title2)
+                .multilineTextAlignment(.center)
+                .padding()
             }
         }
-        .frame(minWidth: 300, minHeight: 165)
+        .frame(minWidth: 350, minHeight: 165)
     }
 }
 
@@ -29,7 +32,7 @@ struct ContentView_Previews: PreviewProvider {
         ContentView(sources: [])
             .previewDisplayName("No sources")
         ContentView(sources: [])
-            .frame(width: 300)
+            .frame(width: 350)
             .previewDisplayName("No sources, narrow")
     }
 }

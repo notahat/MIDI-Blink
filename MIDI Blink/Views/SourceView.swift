@@ -14,7 +14,7 @@ struct SourceView: View {
                     withAnimation { lastSeenEventCount = source.eventCount }
                 }
             Text(source.displayName)
-                .font(.largeTitle)
+                .font(.title3)
         }
     }
 }

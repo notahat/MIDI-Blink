@@ -5,9 +5,9 @@ struct LightView: View {
     
     var body: some View {
         Rectangle()
-            .frame(width: 30, height: 30)
+            .frame(width: 20, height: 20)
             .border(Color.primary, width: 2)
-            .padding(5)
+            .padding(3)
             .foregroundColor(isOn ? .green : .clear)
     }
 }

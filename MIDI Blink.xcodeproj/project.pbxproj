@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3420CDE52A3B362F000A5871 /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420CDE42A3B362F000A5871 /* LightView.swift */; };
+		346864962A3FC9DC0060CB2B /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 346864952A3FC9DC0060CB2B /* Credits.html */; };
 		34691FDC2A3AD6310054E09D /* MIDI_BlinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691FDB2A3AD6310054E09D /* MIDI_BlinkApp.swift */; };
 		34691FDE2A3AD6310054E09D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691FDD2A3AD6310054E09D /* ContentView.swift */; };
 		34691FE02A3AD6310054E09D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34691FDF2A3AD6310054E09D /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		3420CDE42A3B362F000A5871 /* LightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightView.swift; sourceTree = "<group>"; };
 		346864942A3FBB8C0060CB2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		346864952A3FC9DC0060CB2B /* Credits.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
 		34691FD82A3AD6310054E09D /* MIDI Blink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MIDI Blink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34691FDB2A3AD6310054E09D /* MIDI_BlinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDI_BlinkApp.swift; sourceTree = "<group>"; };
 		34691FDD2A3AD6310054E09D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,13 +65,14 @@
 		34691FDA2A3AD6310054E09D /* MIDI Blink */ = {
 			isa = PBXGroup;
 			children = (
+				346864942A3FBB8C0060CB2B /* README.md */,
 				34691FDB2A3AD6310054E09D /* MIDI_BlinkApp.swift */,
 				34691FF32A3B2BEA0054E09D /* Views */,
 				34691FF22A3B2BDD0054E09D /* Models */,
 				34691FDF2A3AD6310054E09D /* Assets.xcassets */,
 				34691FE42A3AD6310054E09D /* MIDI_Blink.entitlements */,
+				346864952A3FC9DC0060CB2B /* Credits.html */,
 				34691FE12A3AD6310054E09D /* Preview Content */,
-				346864942A3FBB8C0060CB2B /* README.md */,
 			);
 			path = "MIDI Blink";
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34691FE32A3AD6310054E09D /* Preview Assets.xcassets in Resources */,
+				346864962A3FC9DC0060CB2B /* Credits.html in Resources */,
 				34691FE02A3AD6310054E09D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

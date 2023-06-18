@@ -8,9 +8,10 @@ are happening in your system.
 
 - Better error handling
 - Fix memory leak
-- About box
 - Icon
 - Support and privacy policy pages
+- Set version correctly for About box
+- Help
 
 ### Testing
 

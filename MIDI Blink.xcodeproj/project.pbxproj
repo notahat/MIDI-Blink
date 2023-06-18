@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		3420CDE42A3B362F000A5871 /* LightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightView.swift; sourceTree = "<group>"; };
+		346864942A3FBB8C0060CB2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		34691FD82A3AD6310054E09D /* MIDI Blink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MIDI Blink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34691FDB2A3AD6310054E09D /* MIDI_BlinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDI_BlinkApp.swift; sourceTree = "<group>"; };
 		34691FDD2A3AD6310054E09D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 				34691FDF2A3AD6310054E09D /* Assets.xcassets */,
 				34691FE42A3AD6310054E09D /* MIDI_Blink.entitlements */,
 				34691FE12A3AD6310054E09D /* Preview Content */,
+				346864942A3FBB8C0060CB2B /* README.md */,
 			);
 			path = "MIDI Blink";
 			sourceTree = "<group>";

@@ -7,7 +7,6 @@ are happening in your system.
 ## To Do
 
 - Better error handling
-- Fix memory leak
 - Icon
 - Support and privacy policy pages
 - Set version correctly for About box

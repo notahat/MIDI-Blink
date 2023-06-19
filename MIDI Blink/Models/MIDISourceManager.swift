@@ -1,5 +1,10 @@
 import CoreMIDI
 
+// We want to pass pointers to MIDIEndpointRefs as refCon paramters,
+// so we use a StablePointerBuffer to store them and get pointers that
+// don't move around.
+fileprivate var endpointRefs = StablePointerBuffer<MIDIEndpointRef>()
+
 @MainActor
 class MIDISourceManager: ObservableObject {
     @Published var sources: [MIDISource] = []
@@ -47,12 +52,7 @@ class MIDISourceManager: ObservableObject {
     }
     
     private func listenForMessagesFrom(_ endpointRef: MIDIEndpointRef) {
-        // TODO: Fix this memory leak!
-        // Just to get things working, I'm deliberately allocating memory that's never deallocated.
-        // This is obviously not ok, so I need to come up with a better approach.
-        let refCon = UnsafeMutablePointer<MIDIEndpointRef>.allocate(capacity: 1)
-        refCon.initialize(to: endpointRef)
-
+        let refCon = endpointRefs.pointerTo(endpointRef)
         let status = MIDIPortConnectSource(portRef, endpointRef, refCon)
         guard status == noErr else {
             print("MIDIPortConnectSource failed with ", status)

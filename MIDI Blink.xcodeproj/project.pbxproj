@@ -12,7 +12,6 @@
 		340BF9012A3FDC7200107E22 /* StablePointerBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340BF8FB2A3FDBF500107E22 /* StablePointerBuffer.swift */; };
 		3420CDE52A3B362F000A5871 /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420CDE42A3B362F000A5871 /* LightView.swift */; };
 		3460021B2A49187D00E94901 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3460021A2A49187D00E94901 /* ErrorView.swift */; };
-		346864962A3FC9DC0060CB2B /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 346864952A3FC9DC0060CB2B /* Credits.html */; };
 		34691FDC2A3AD6310054E09D /* MIDI_BlinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691FDB2A3AD6310054E09D /* MIDI_BlinkApp.swift */; };
 		34691FDE2A3AD6310054E09D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34691FDD2A3AD6310054E09D /* ContentView.swift */; };
 		34691FE02A3AD6310054E09D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34691FDF2A3AD6310054E09D /* Assets.xcassets */; };
@@ -41,7 +40,6 @@
 		3460021A2A49187D00E94901 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		3460021C2A4925B500E94901 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		346864942A3FBB8C0060CB2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		346864952A3FC9DC0060CB2B /* Credits.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
 		34691FD82A3AD6310054E09D /* MIDI Blink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MIDI Blink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34691FDB2A3AD6310054E09D /* MIDI_BlinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDI_BlinkApp.swift; sourceTree = "<group>"; };
 		34691FDD2A3AD6310054E09D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 				34691FF22A3B2BDD0054E09D /* Models */,
 				34691FDF2A3AD6310054E09D /* Assets.xcassets */,
 				34691FE42A3AD6310054E09D /* MIDI_Blink.entitlements */,
-				346864952A3FC9DC0060CB2B /* Credits.html */,
 				34691FE12A3AD6310054E09D /* Preview Content */,
 			);
 			path = "MIDI Blink";
@@ -233,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				34691FE32A3AD6310054E09D /* Preview Assets.xcassets in Resources */,
-				346864962A3FC9DC0060CB2B /* Credits.html in Resources */,
 				34691FE02A3AD6310054E09D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,7 +435,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright ©️ 2023 Peter Yandell. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -467,7 +463,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright ©️ 2023 Peter Yandell. All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

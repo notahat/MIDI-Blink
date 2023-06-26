@@ -1,16 +1,20 @@
 import CoreMIDI
+import OSLog
 
 // We want to pass pointers to MIDIEndpointRefs as refCon paramters,
 // so we use a StablePointerBuffer to store them and get pointers that
 // don't move around.
-fileprivate var endpointRefs = StablePointerBuffer<MIDIEndpointRef>()
+private var endpointRefs = StablePointerBuffer<MIDIEndpointRef>()
 
 @MainActor
 class MIDISourceManager: ObservableObject {
     @Published var sources: [MIDISource] = []
+    @Published var errorOccurred = false
 
     private var clientRef: MIDIClientRef = 0
     private var portRef: MIDIPortRef = 0
+    
+    private let logger = Logger()
     
     init() {
         createMIDIClient()
@@ -23,18 +27,21 @@ class MIDISourceManager: ObservableObject {
             Task.detached { await self.updateSources() }
         }
         guard status == noErr else {
-            print("MIDIClientCreate failed with ", status)
+            logger.error("MIDIClientCreateWithBlock failed with status \(status)")
+            errorOccurred = true
             return
         }
     }
     
     private func createMIDIPort() {
+        guard clientRef != 0 else { return }
         let status = MIDIInputPortCreateWithProtocol(clientRef, "MIDI Blink" as CFString, ._2_0, &portRef) { _, refCon in
             let endpointRef = refCon!.load(as: MIDIEndpointRef.self)
             Task.detached { await self.processReceivedMessages(endpointRef) }
         }
         guard status == noErr else {
-            print("MIDIInputPortCreateWithProtocol failed with ", status)
+            logger.error("MIDIInputPortCreateWithProtocol failed with status \(status)")
+            errorOccurred = true
             return
         }
     }
@@ -52,10 +59,12 @@ class MIDISourceManager: ObservableObject {
     }
     
     private func listenForMessagesFrom(_ endpointRef: MIDIEndpointRef) {
+        guard portRef != 0 else { return }
         let refCon = endpointRefs.pointerTo(endpointRef)
         let status = MIDIPortConnectSource(portRef, endpointRef, refCon)
         guard status == noErr else {
-            print("MIDIPortConnectSource failed with ", status)
+            logger.error("MIDIPortConnectSource failed with status \(status)")
+            errorOccurred = true
             return
         }
     }

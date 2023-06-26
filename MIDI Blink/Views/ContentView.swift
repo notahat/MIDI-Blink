@@ -2,20 +2,24 @@ import SwiftUI
 
 struct ContentView: View {
     var sources: [MIDISource] = []
+    var showError = false
 
     var body: some View {
-        List(sources) {
-            SourceView(source: $0)
-        }
-        .overlay {
-            if sources.isEmpty {
-                VStack {
-                    Text("No MIDI sources are connected.")
-                    Text("Plug in a MIDI device to get started.")
+        VStack(spacing: 0) {
+            if showError { ErrorView() }
+            List(sources) {
+                SourceView(source: $0)
+            }
+            .overlay {
+                if sources.isEmpty {
+                    VStack {
+                        Text("No MIDI sources are connected.")
+                        Text("Plug in a MIDI device to get started.")
+                    }
+                    .font(.title2)
+                    .multilineTextAlignment(.center)
+                    .padding()
                 }
-                .font(.title2)
-                .multilineTextAlignment(.center)
-                .padding()
             }
         }
         .frame(minWidth: 350, minHeight: 165)
@@ -23,12 +27,15 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static let sources = [
+        MIDISource(displayName: "Foo"),
+        MIDISource(displayName: "Bar"),
+        MIDISource(displayName: "Baz"),
+    ]
     static var previews: some View {
-        ContentView(sources: [
-            MIDISource(displayName: "Foo"),
-            MIDISource(displayName: "Bar"),
-            MIDISource(displayName: "Baz"),
-        ])
+        ContentView(sources: sources)
+        ContentView(sources: sources, showError: true)
+            .previewDisplayName("Showing error")
         ContentView(sources: [])
             .previewDisplayName("No sources")
         ContentView(sources: [])

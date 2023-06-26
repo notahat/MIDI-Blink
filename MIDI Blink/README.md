@@ -4,21 +4,23 @@ A simple MacOS app that shows all your MIDI sources, and blinks a light next
 to each when MIDI data is received. Good for figuring out where MIDI problems
 are happening in your system.
 
-## To Do
-
-- Better error handling
-- Icon
-- Support and privacy policy pages
-- Set version correctly for About box
-- Help
-
-### Testing
+## Stuff to Test
 
 - Accessibility
 - Dark/light modes
 - Font sizes?
 
-### Maybe
+## Release Process
 
-- Demo mode
-- Nicer design for the blinking lights
+Haven't done a release yet, so this is just rough for now.
+
+- QA
+- Bump build number
+- Commit
+- Push
+- Make an archive in XCode
+- Do magic on App Store Connect
+- Tag and create release on GitHub (e.g. v1.0)
+- Bump version
+- Commit
+- Push

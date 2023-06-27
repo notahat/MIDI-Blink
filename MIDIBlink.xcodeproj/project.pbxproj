@@ -35,6 +35,7 @@
 /* Begin PBXFileReference section */
 		345990F32A4B187E00F0CC76 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		345990F42A4B187E00F0CC76 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		34B7CBD22A4B4356001BF625 /* AppIcon.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppIcon.sketch; sourceTree = "<group>"; };
 		34FEB8802A4B10EA0016013F /* MIDI Blink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MIDI Blink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FEB8832A4B10EA0016013F /* MIDIBlinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIBlinkApp.swift; sourceTree = "<group>"; };
 		34FEB8872A4B10EA0016013F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +76,7 @@
 			children = (
 				345990F32A4B187E00F0CC76 /* README.md */,
 				345990F42A4B187E00F0CC76 /* LICENSE.txt */,
+				34B7CBD22A4B4356001BF625 /* AppIcon.sketch */,
 				34FEB8822A4B10EA0016013F /* MIDIBlink */,
 				34FEB8972A4B11070016013F /* MIDIBlinkTests */,
 				34FEB8812A4B10EA0016013F /* Products */,

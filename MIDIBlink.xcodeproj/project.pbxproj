@@ -124,9 +124,9 @@
 		34FEB89F2A4B14C10016013F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				34FEB8A22A4B14C10016013F /* MIDIHelpers.swift */,
 				34FEB8A02A4B14C10016013F /* MIDISource.swift */,
 				34FEB8A12A4B14C10016013F /* MIDISourceManager.swift */,
-				34FEB8A22A4B14C10016013F /* MIDIHelpers.swift */,
 				34FEB8A32A4B14C10016013F /* StablePointerBuffer.swift */,
 			);
 			path = Models;
@@ -135,10 +135,10 @@
 		34FEB8A82A4B14D10016013F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				34FEB8A92A4B14D10016013F /* SourceView.swift */,
-				34FEB8AA2A4B14D10016013F /* LightView.swift */,
 				34FEB8AB2A4B14D10016013F /* ContentView.swift */,
 				34FEB8AC2A4B14D10016013F /* ErrorView.swift */,
+				34FEB8AA2A4B14D10016013F /* LightView.swift */,
+				34FEB8A92A4B14D10016013F /* SourceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

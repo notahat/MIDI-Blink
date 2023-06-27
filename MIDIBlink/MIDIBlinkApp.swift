@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct MIDI_BlinkApp: App {
+struct MIDIBlinkApp: App {
     @Environment(\.openURL) var openURL
 
     @StateObject private var sourceManager = MIDISourceManager()

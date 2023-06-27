@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		345990F52A4B187F00F0CC76 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 345990F32A4B187E00F0CC76 /* README.md */; };
+		345990F62A4B187F00F0CC76 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 345990F42A4B187E00F0CC76 /* LICENSE.txt */; };
+		34FEB8842A4B10EA0016013F /* MIDIBlinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FEB8832A4B10EA0016013F /* MIDIBlinkApp.swift */; };
+		34FEB8882A4B10EA0016013F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FEB8872A4B10EA0016013F /* Assets.xcassets */; };
+		34FEB88B2A4B10EA0016013F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FEB88A2A4B10EA0016013F /* Preview Assets.xcassets */; };
+		34FEB8A42A4B14C10016013F /* MIDISource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FEB8A02A4B14C10016013F /* MIDISource.swift */; };
+		34FEB8A52A4B14C10016013F /* MIDISourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FEB8A12A4B14C10016013F /* MIDISourceManager.swift */; };
+		34FEB8A62A4B14C10016013F /* MIDIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FEB8A22A4B14C10016013F /* MIDIHelpers.swift */; };
+		34FEB8A72A4B14C10016013F /* StablePointerBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FEB8A32A4B14C10016013F /* StablePointerBuffer.swift */; };
+		34FEB8AD2A4B14D10016013F /* SourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FEB8A92A4B14D10016013F /* SourceView.swift */; };
+		34FEB8AE2A4B14D10016013F /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FEB8AA2A4B14D10016013F /* LightView.swift */; };
+		34FEB8AF2A4B14D10016013F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FEB8AB2A4B14D10016013F /* ContentView.swift */; };
+		34FEB8B02A4B14D10016013F /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FEB8AC2A4B14D10016013F /* ErrorView.swift */; };
+		34FEB8B22A4B15EA0016013F /* StablePointerBufferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FEB8B12A4B15EA0016013F /* StablePointerBufferTests.swift */; };
+		34FEB8B32A4B15FC0016013F /* StablePointerBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FEB8A32A4B14C10016013F /* StablePointerBuffer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34FEB89A2A4B11070016013F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34FEB8782A4B10EA0016013F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34FEB87F2A4B10EA0016013F;
+			remoteInfo = MIDIBlink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		345990F32A4B187E00F0CC76 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		345990F42A4B187E00F0CC76 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		34FEB8802A4B10EA0016013F /* MIDI Blink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MIDI Blink.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34FEB8832A4B10EA0016013F /* MIDIBlinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIBlinkApp.swift; sourceTree = "<group>"; };
+		34FEB8872A4B10EA0016013F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34FEB88A2A4B10EA0016013F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34FEB88C2A4B10EA0016013F /* MIDIBlink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MIDIBlink.entitlements; sourceTree = "<group>"; };
+		34FEB8962A4B11070016013F /* MIDIBlinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MIDIBlinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34FEB8A02A4B14C10016013F /* MIDISource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDISource.swift; sourceTree = "<group>"; };
+		34FEB8A12A4B14C10016013F /* MIDISourceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDISourceManager.swift; sourceTree = "<group>"; };
+		34FEB8A22A4B14C10016013F /* MIDIHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDIHelpers.swift; sourceTree = "<group>"; };
+		34FEB8A32A4B14C10016013F /* StablePointerBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StablePointerBuffer.swift; sourceTree = "<group>"; };
+		34FEB8A92A4B14D10016013F /* SourceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceView.swift; sourceTree = "<group>"; };
+		34FEB8AA2A4B14D10016013F /* LightView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightView.swift; sourceTree = "<group>"; };
+		34FEB8AB2A4B14D10016013F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		34FEB8AC2A4B14D10016013F /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		34FEB8B12A4B15EA0016013F /* StablePointerBufferTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StablePointerBufferTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34FEB87D2A4B10EA0016013F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34FEB8932A4B11070016013F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34FEB8772A4B10EA0016013F = {
+			isa = PBXGroup;
+			children = (
+				345990F32A4B187E00F0CC76 /* README.md */,
+				345990F42A4B187E00F0CC76 /* LICENSE.txt */,
+				34FEB8822A4B10EA0016013F /* MIDIBlink */,
+				34FEB8972A4B11070016013F /* MIDIBlinkTests */,
+				34FEB8812A4B10EA0016013F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		34FEB8812A4B10EA0016013F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34FEB8802A4B10EA0016013F /* MIDI Blink.app */,
+				34FEB8962A4B11070016013F /* MIDIBlinkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34FEB8822A4B10EA0016013F /* MIDIBlink */ = {
+			isa = PBXGroup;
+			children = (
+				34FEB8832A4B10EA0016013F /* MIDIBlinkApp.swift */,
+				34FEB8A82A4B14D10016013F /* Views */,
+				34FEB89F2A4B14C10016013F /* Models */,
+				34FEB8872A4B10EA0016013F /* Assets.xcassets */,
+				34FEB88C2A4B10EA0016013F /* MIDIBlink.entitlements */,
+				34FEB8892A4B10EA0016013F /* Preview Content */,
+			);
+			path = MIDIBlink;
+			sourceTree = "<group>";
+		};
+		34FEB8892A4B10EA0016013F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				34FEB88A2A4B10EA0016013F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34FEB8972A4B11070016013F /* MIDIBlinkTests */ = {
+			isa = PBXGroup;
+			children = (
+				34FEB8B12A4B15EA0016013F /* StablePointerBufferTests.swift */,
+			);
+			path = MIDIBlinkTests;
+			sourceTree = "<group>";
+		};
+		34FEB89F2A4B14C10016013F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34FEB8A02A4B14C10016013F /* MIDISource.swift */,
+				34FEB8A12A4B14C10016013F /* MIDISourceManager.swift */,
+				34FEB8A22A4B14C10016013F /* MIDIHelpers.swift */,
+				34FEB8A32A4B14C10016013F /* StablePointerBuffer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		34FEB8A82A4B14D10016013F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34FEB8A92A4B14D10016013F /* SourceView.swift */,
+				34FEB8AA2A4B14D10016013F /* LightView.swift */,
+				34FEB8AB2A4B14D10016013F /* ContentView.swift */,
+				34FEB8AC2A4B14D10016013F /* ErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34FEB87F2A4B10EA0016013F /* MIDIBlink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34FEB88F2A4B10EA0016013F /* Build configuration list for PBXNativeTarget "MIDIBlink" */;
+			buildPhases = (
+				34FEB87C2A4B10EA0016013F /* Sources */,
+				34FEB87D2A4B10EA0016013F /* Frameworks */,
+				34FEB87E2A4B10EA0016013F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MIDIBlink;
+			productName = MIDIBlink;
+			productReference = 34FEB8802A4B10EA0016013F /* MIDI Blink.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34FEB8952A4B11070016013F /* MIDIBlinkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34FEB89C2A4B11070016013F /* Build configuration list for PBXNativeTarget "MIDIBlinkTests" */;
+			buildPhases = (
+				34FEB8922A4B11070016013F /* Sources */,
+				34FEB8932A4B11070016013F /* Frameworks */,
+				34FEB8942A4B11070016013F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34FEB89B2A4B11070016013F /* PBXTargetDependency */,
+			);
+			name = MIDIBlinkTests;
+			productName = MIDIBlinkTests;
+			productReference = 34FEB8962A4B11070016013F /* MIDIBlinkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34FEB8782A4B10EA0016013F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					34FEB87F2A4B10EA0016013F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					34FEB8952A4B11070016013F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 34FEB87F2A4B10EA0016013F;
+					};
+				};
+			};
+			buildConfigurationList = 34FEB87B2A4B10EA0016013F /* Build configuration list for PBXProject "MIDIBlink" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34FEB8772A4B10EA0016013F;
+			productRefGroup = 34FEB8812A4B10EA0016013F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34FEB87F2A4B10EA0016013F /* MIDIBlink */,
+				34FEB8952A4B11070016013F /* MIDIBlinkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34FEB87E2A4B10EA0016013F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345990F62A4B187F00F0CC76 /* LICENSE.txt in Resources */,
+				345990F52A4B187F00F0CC76 /* README.md in Resources */,
+				34FEB88B2A4B10EA0016013F /* Preview Assets.xcassets in Resources */,
+				34FEB8882A4B10EA0016013F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34FEB8942A4B11070016013F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34FEB87C2A4B10EA0016013F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FEB8A72A4B14C10016013F /* StablePointerBuffer.swift in Sources */,
+				34FEB8AD2A4B14D10016013F /* SourceView.swift in Sources */,
+				34FEB8A62A4B14C10016013F /* MIDIHelpers.swift in Sources */,
+				34FEB8A42A4B14C10016013F /* MIDISource.swift in Sources */,
+				34FEB8A52A4B14C10016013F /* MIDISourceManager.swift in Sources */,
+				34FEB8B02A4B14D10016013F /* ErrorView.swift in Sources */,
+				34FEB8AF2A4B14D10016013F /* ContentView.swift in Sources */,
+				34FEB8AE2A4B14D10016013F /* LightView.swift in Sources */,
+				34FEB8842A4B10EA0016013F /* MIDIBlinkApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34FEB8922A4B11070016013F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FEB8B32A4B15FC0016013F /* StablePointerBuffer.swift in Sources */,
+				34FEB8B22A4B15EA0016013F /* StablePointerBufferTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34FEB89B2A4B11070016013F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34FEB87F2A4B10EA0016013F /* MIDIBlink */;
+			targetProxy = 34FEB89A2A4B11070016013F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34FEB88D2A4B10EA0016013F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		34FEB88E2A4B10EA0016013F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		34FEB8902A4B10EA0016013F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MIDIBlink/MIDIBlink.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MIDIBlink/Preview Content\"";
+				DEVELOPMENT_TEAM = EDZJE3T9P5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright ©️ 2023 Peter Yandell. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notahat.MIDIBlink;
+				PRODUCT_NAME = "MIDI Blink";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		34FEB8912A4B10EA0016013F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MIDIBlink/MIDIBlink.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MIDIBlink/Preview Content\"";
+				DEVELOPMENT_TEAM = EDZJE3T9P5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright ©️ 2023 Peter Yandell. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notahat.MIDIBlink;
+				PRODUCT_NAME = "MIDI Blink";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		34FEB89D2A4B11070016013F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EDZJE3T9P5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notahat.MIDIBlinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MIDI Blink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MIDI Blink";
+			};
+			name = Debug;
+		};
+		34FEB89E2A4B11070016013F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EDZJE3T9P5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notahat.MIDIBlinkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MIDI Blink.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MIDI Blink";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34FEB87B2A4B10EA0016013F /* Build configuration list for PBXProject "MIDIBlink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FEB88D2A4B10EA0016013F /* Debug */,
+				34FEB88E2A4B10EA0016013F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34FEB88F2A4B10EA0016013F /* Build configuration list for PBXNativeTarget "MIDIBlink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FEB8902A4B10EA0016013F /* Debug */,
+				34FEB8912A4B10EA0016013F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34FEB89C2A4B11070016013F /* Build configuration list for PBXNativeTarget "MIDIBlinkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FEB89D2A4B11070016013F /* Debug */,
+				34FEB89E2A4B11070016013F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34FEB8782A4B10EA0016013F /* Project object */;
+}

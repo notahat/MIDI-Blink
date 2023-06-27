@@ -12,7 +12,7 @@ struct ErrorView: View {
     }
 }
 
-struct TestView_Previews: PreviewProvider {
+struct ErrorView_Previews: PreviewProvider {
     static var previews: some View {
         ErrorView()
     }

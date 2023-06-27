@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		345990F52A4B187F00F0CC76 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 345990F32A4B187E00F0CC76 /* README.md */; };
-		345990F62A4B187F00F0CC76 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 345990F42A4B187E00F0CC76 /* LICENSE.txt */; };
 		34FEB8842A4B10EA0016013F /* MIDIBlinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FEB8832A4B10EA0016013F /* MIDIBlinkApp.swift */; };
 		34FEB8882A4B10EA0016013F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FEB8872A4B10EA0016013F /* Assets.xcassets */; };
 		34FEB88B2A4B10EA0016013F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FEB88A2A4B10EA0016013F /* Preview Assets.xcassets */; };
@@ -224,8 +222,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				345990F62A4B187F00F0CC76 /* LICENSE.txt in Resources */,
-				345990F52A4B187F00F0CC76 /* README.md in Resources */,
 				34FEB88B2A4B10EA0016013F /* Preview Assets.xcassets in Resources */,
 				34FEB8882A4B10EA0016013F /* Assets.xcassets in Resources */,
 			);

@@ -2,7 +2,7 @@ import SwiftUI
 
 struct LightView: View {
     var isOn: Bool = false
-    
+
     var body: some View {
         Rectangle()
             .frame(width: 20, height: 20)

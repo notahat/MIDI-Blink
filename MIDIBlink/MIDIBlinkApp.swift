@@ -19,7 +19,7 @@ struct MIDIBlinkApp: App {
             }
         }
     }
-    
+
     private func openHelp() {
         if let url = URL(string: "https://notahat.com/midiblink/support/") {
             openURL(url)

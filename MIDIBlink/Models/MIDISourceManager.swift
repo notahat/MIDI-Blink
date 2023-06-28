@@ -13,15 +13,15 @@ class MIDISourceManager: ObservableObject {
 
     private var clientRef: MIDIClientRef = 0
     private var portRef: MIDIPortRef = 0
-    
+
     private let logger = Logger()
-    
+
     init() {
         createMIDIClient()
         createMIDIPort()
         updateSources()
     }
-    
+
     private func createMIDIClient() {
         let status = MIDIClientCreateWithBlock("MIDI Blink" as CFString, &clientRef) { _ in
             Task.detached { await self.updateSources() }
@@ -32,7 +32,7 @@ class MIDISourceManager: ObservableObject {
             return
         }
     }
-    
+
     private func createMIDIPort() {
         guard clientRef != 0 else { return }
         let status = MIDIInputPortCreateWithProtocol(clientRef, "MIDI Blink" as CFString, ._2_0, &portRef) { _, refCon in
@@ -45,7 +45,7 @@ class MIDISourceManager: ObservableObject {
             return
         }
     }
-    
+
     private func updateSources() {
         let numberOfSources = MIDIGetNumberOfSources()
         sources = (0 ..< numberOfSources).map { index in
@@ -57,7 +57,7 @@ class MIDISourceManager: ObservableObject {
             )
         }
     }
-    
+
     private func listenForMessagesFrom(_ endpointRef: MIDIEndpointRef) {
         guard portRef != 0 else { return }
         let refCon = endpointRefs.pointerTo(endpointRef)
@@ -68,7 +68,7 @@ class MIDISourceManager: ObservableObject {
             return
         }
     }
-    
+
     private func processReceivedMessages(_ endpointRef: MIDIEndpointRef) {
         if let index = sources.firstIndex(where: { $0.endpointRef == endpointRef }) {
             sources[index].eventCount += 1

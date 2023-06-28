@@ -13,7 +13,7 @@ final class StablePointerBufferTests: XCTestCase {
         let resultB = buffer.pointerTo(42)
         XCTAssertNotEqual(resultA, resultB)
     }
-    
+
     func testGivesTheSamePointerForTheSameValue() throws {
         let buffer = StablePointerBuffer<Int>()
         let resultA = buffer.pointerTo(27)
